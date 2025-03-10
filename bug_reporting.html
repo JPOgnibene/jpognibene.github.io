@@ -9,8 +9,15 @@
 </head>
 <body>
     <header>
-        <h1>Report Bugs</h1>
-        <button onclick="location.href='homePage.html'" class="btn btn-success">Back to Home</button>
+        <div class="nav_logo">
+            <img src="images/rrlogo2.png" width="72px" style="border-radius: 100%; border: 1px solid rgba(255,255,255,0.75);">
+            <h3>Rural Community Forum</h3>
+        </div>
+        <div class="nav justify-content-center">
+            <button id="btnCommunity" type="button" class="btn btn-success center" onclick="location.href='community_forums.html'" style="margin: 8px 8px;">Community Forums</button>
+            <button id="btnMarket" type="button" class="btn btn-success" onclick="location.href='marketplace.html'"style="margin: 8px 8px;">Marketplace</button>
+            <button id="btnBugs" type="button" class="btn btn-success" onclick="location.href='bug_reporting.html'"style="margin: 8px 8px;">Report Bugs</button>
+        </div>
     </header>
     <div class="container">
         <h2>Bug Reporting Form</h2>
