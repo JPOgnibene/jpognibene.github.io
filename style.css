@@ -5,10 +5,8 @@ body {
             background-color: #f4f4f4;
         }
         header {
-            background-color: #4CAF50;
             color: white;
             text-align: center;
-            padding: 1rem 0;
         }
         .container {
             max-width: 800px;
@@ -46,7 +44,6 @@ body {
             color: white;
             border: none;
             padding: 10px 20px;
-            margin-top: 10px;
             border-radius: 4px;
             cursor: pointer;
         }
