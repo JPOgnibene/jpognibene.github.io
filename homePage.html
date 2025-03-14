@@ -1,35 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rural Reimagined Community Forum</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rural Community Forum - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <h1>Rural Community Forum</h1>
-        <button id="btnCommunity" type="button" class="btn btn-success" onclick="location.href='community_forums.html'">Community Forums</button>
-        <button id="btnMarket" type="button" class="btn btn-success" onclick="location.href='marketplace.html'">Marketplace</button>
-        <button id="btnBugs" type="button" class="btn btn-success" onclick="location.href='bug_reporting.html'">Report Bugs</button>
-    </header>
-    <div class="container">
-        <div class="post">
-            <h3>Community Event: Spring Festival</h3>
-            <p>We’re hosting a Spring Festival on March 15th! Come join us for food, music, and games!</p>
-        </div>
-        <div class="post">
-            <h3>Looking for a Local Carpenter</h3>
-            <p>Does anyone know a good carpenter in the area? We need help with some barn repairs.</p>
-        </div>
-        <div class="new-post">
-            <h2>Start a New Discussion</h2>
-            <input type="text" placeholder="Post Title">
-            <textarea placeholder="Write your post here..." rows="5"></textarea>
-            <button>Submit Post</button>
-        </div>
+  <header style="margin-bottom: 128px;">
+    <div class="navbar" style="position: fixed; width: 100%; top: 0; background-color: rgba(76, 175, 80, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); z-index: 9999;
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.35);">
+    <div class="nav_logo">
+        <img src="images/rrlogo2.png" width="64px" style="margin-left: 32px; border-radius: 100%; border: 1px solid rgba(255,255,255,0.75);">
+        <h3 style="display: inline-block; position: relative; top: 6px; left: 16px;">Rural Reimagined</h3>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="nav" style="margin-right: 32px;">
+        <button id="btnHome" type="button" class="btn btn-success center" onclick="location.href='homePage.html'" style="padding: 8px 10px; margin: 8px 8px;">Home</button>
+        <button id="btnCommunity" type="button" class="btn btn-success center" onclick="location.href='community_forums.html'" style="padding: 8px 10px; margin: 8px 8px;">Community Forums</button>
+        <button id="btnMarket" type="button" class="btn btn-success" onclick="location.href='marketplace.html'"style="padding: 8px 10px; margin: 8px 8px;">Marketplace</button>
+        <button id="btnBugs" type="button" class="btn btn-success" onclick="location.href='bug_reporting.html'"style="padding: 8px 10px; margin: 8px 8px;">Report Bugs</button>
+        <button id="btnBugs" type="button" class="btn btn-success" onclick="location.href='bug_reporting.html'"style="padding: 8px 10px; margin: 8px 8px;">Logout</button>
+    </div></div>
+  </header>
+
+  <div class="container">
+    <div class="greenContainer" 
+    style="background: #1A8754; padding: 16px; color: #fff; border-radius: 12px;
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.35);
+    border: 1px solid #60A57F;">
+        <h2>Welcome to Rural Reimagined</h2>
+        <hr>
+        <p>
+            We are dedicated to connecting rural communities and sharing local news, events, and ideas.
+            Whether you're looking for engaging discussions, local business insights, or community events, 
+            you've come to the right place!
+          </p>
+          
+    </div>
+    <br>
+    <div class="post">
+      <h3>Upcoming Community Gathering</h3>
+      <p>
+        Join us for our monthly meet-up to connect with neighbors, enjoy local treats, and share your ideas 
+        on building a better community.
+      </p>
+      <button onclick="location.href='new_post.html'" style="margin-top: 12px;">View Page</button>
+    </div>
+    <br>
+    <div class="post">
+      <h3>Featured Local Business</h3>
+      <p>
+        Discover one of our standout local businesses that has been serving the community for decades. 
+        Learn more about their story and what makes them unique!
+      </p>
+      <br>
+      <h4>Local Store Name</h4>
+      <img src="images/storeFront.jpeg" width="256px" style="border-radius: 5px; border: 1px solid rgba(0,0,0,0.75);">
+      <br>
+      <br>
+      <button onclick="location.href='new_post.html'">Get Directions</button>
+    </div>
+    <br>
+    <div class="new-post">
+      <h2>Share Your Story</h2>
+      <p>
+        Got an experience or idea to share? Start a new discussion and let your voice be heard by the community.
+      </p>
+      <button onclick="location.href='new_post.html'">Create New Post</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+          crossorigin="anonymous"></script>
 </body>
 </html>

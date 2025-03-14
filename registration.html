@@ -43,6 +43,8 @@
             border-radius: 4px;
             cursor: pointer;
             font-size: 16px;
+            position: relative;
+            left: 2%
         }
         button:hover {
             background-color: #45a049;
@@ -62,14 +64,17 @@
 </head>
 <body>
     <div class="register-container">
-        <h2>Create a New Account</h2>
+        <div class="nav_logo justify-content-center" style="text-align: center;">
+            <img src="images/rrlogo2.png" width="72px" style="border-radius: 100%; border: 1px solid rgba(255,255,255,0.75);">
+            <h2>Create a New Account</h2>
+        </div>
         <form action="homePage.html" method="get">
             <input type="text" placeholder="Full Name" required>
             <input type="email" placeholder="Email Address" required>
             <input type="text" placeholder="Username" required>
             <input type="password" placeholder="Password" required>
-            <input type="address" placeholder="Address" required>
-            <button type="submit">Register</button>
+            <input class="mb-1" type="text" placeholder="Address" required">
+            <button type="submit" style="width: (100% - 20px); margin-top: 20px;">Register</button>
         </form>
         <div class="login-link">
             <p>Already have an account? <a href="index.html">Login here</a></p>
